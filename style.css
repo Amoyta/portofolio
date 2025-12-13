@@ -96,16 +96,14 @@
 }
 
 #txtskill {
-  margin: 50px 0 0 0;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   padding: 0 0 0 0;
-}
-
-#txtskill {
   background-color: #1a1a1a;
   padding: 0 10px;
   border-radius: 10px 10px 0px 0px;
   width: fit-content;
-  margin: 0 auto;
 }
 
 #txtskill p {
