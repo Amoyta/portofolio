@@ -1,0 +1,113 @@
+.navbar-custom {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  background-color: #1a1a1a;
+  /* Warna gelap */
+  padding: 10px 0;
+}
+
+.nav-link {
+  color: #b0b0b0 !important;
+  /* Warna teks abu-abu */
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin: 0 20px;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  /* Warna saat di-hover */
+}
+
+.social-icon {
+  color: #6c757d;
+  margin-left: 15px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: white;
+}
+
+#profile {
+  background-color: #143961;
+  padding-top: 50px;
+}
+
+#profile h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+#profile p {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.profile-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  text-align: center;
+  color: white;
+}
+
+.skill-item i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#skills {
+  background-color: #1a1a1a;
+  padding: 10px 30px;
+  border-radius: 10px 10px 0px 0px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#col-skill {
+  margin: 0;
+  padding: 0;
+}
+
+.skill-item img {
+  width: 50px;
+  height: 50px;
+}
+
+#txtskill {
+  margin: 50px 0 0 0;
+  padding: 0 0 0 0;
+}
+
+#txtskill {
+  background-color: #1a1a1a;
+  padding: 0 10px;
+  border-radius: 10px 10px 0px 0px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#txtskill p {
+  margin: 0 0 0 0;
+}
