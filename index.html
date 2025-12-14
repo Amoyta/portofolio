@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-custom" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top" data-bs-theme="dark">
       <div class="container">
         <button
           class="navbar-toggler"
@@ -44,10 +44,10 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Recent Work</a>
+              <a class="nav-link" href="#recentWork">Recent Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Get In Touch</a>
+              <a class="nav-link" href="#endsection">Get In Touch</a>
             </li>
           </ul>
           <div class="d-flex align-items-center">
@@ -132,7 +132,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="recentWork">
       <div class="container mt-5 recent-work">
         <div class="row align-items-center">
           <div class="col-lg-12 text-center">
@@ -183,7 +183,7 @@
             </p>
           </div>
         </div>
-        <div class="row align-items-center">
+        <div class="row align-items-center mb-5">
           <div class="col-lg-6 text-center">
             <p>
               Project 1: A promotional video I created for a local business,
@@ -204,13 +204,47 @@
           <div class="col-lg-12 text-center">
             <h2>Get In Touch</h2>
             <p class="text-justify">
-              I am always open to new opportunities and collaborations. If you
-              have any questions, project ideas, or just want to connect, feel
-              free to reach out to me through the following channels:
+              If you have any questions, collaboration ideas, or just want to
+              say hello, feel free to reach out! You can contact me by filling
+              out the form below with your email, phone number, and message.
+              I'll get back to you as soon as possible. Looking forward to
+              hearing from you!
             </p>
-            <ul class="contact-info list-unstyled">
-              <li><strong>Email:</strong></li>
-            </ul>
+            
+            <form id="contactForm" class="contact-form">
+              <div class="mb-3">
+                <input 
+                  type="email" 
+                  class="form-control" 
+                  id="email" 
+                  name="email" 
+                  placeholder="Email" 
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input 
+                  type="tel" 
+                  class="form-control" 
+                  id="phone" 
+                  name="phone" 
+                  placeholder="Phone" 
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea 
+                  class="form-control" 
+                  id="message" 
+                  name="message" 
+                  rows="5" 
+                  placeholder="Massage" 
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Send Massage</button>
+              <div id="responseMessage"></div>
+            </form>
           </div>
         </div>
       </div>
@@ -223,5 +257,28 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzaXkDEjtffBOw1Lyi_lTBYtGaWQmCsdK2svx145zp2V1kqA_GwXr0QPf_q1cCKBODFig/exec'; // Ganti dengan URL dari Google Apps Script
+      
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const responseMessage = document.getElementById('responseMessage');
+        
+        fetch(SCRIPT_URL, {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => {
+          responseMessage.innerHTML = '<p class="text-success">Pesan berhasil dikirim! Terima kasih.</p>';
+          document.getElementById('contactForm').reset();
+        })
+        .catch(error => {
+          responseMessage.innerHTML = '<p class="text-danger">Gagal mengirim pesan. Coba lagi.</p>';
+          console.error('Error:', error);
+        });
+      });
+    </script>
   </body>
 </html>
