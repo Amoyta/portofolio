@@ -53,17 +53,23 @@
   margin-bottom: 45px;
 }
 
-.button-group {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  flex-wrap: wrap;
+.call-to-action {
+  width: fit-content;
 }
 
-.call-to-action:hover {
+#contactme:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+}
+#cv:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#cv {
+    margin-left: 20px;
 }
 
 .call-to-action a {
@@ -152,6 +158,14 @@ margin-right: auto;
   font-weight: 800;
   margin-top: 30px;
   text-align: center;
+}
+
+.recent-work h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  margin: auto 70px;
+  margin-bottom: 15px;
 }
 
 .recent-work p {
