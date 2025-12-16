@@ -53,8 +53,11 @@
   margin-bottom: 45px;
 }
 
-.call-to-action {
-  width: fit-content;
+.button-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .call-to-action:hover {
