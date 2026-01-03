@@ -1,319 +1,491 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portofolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-custom sticky-top" data-bs-theme="dark">
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#rW">Recent Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#endsection">Get In Touch</a>
-            </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portofolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <style>
+    .modal-content {
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+    }
+
+    .modal-header {
+      border-bottom: 1px solid #333;
+    }
+
+    .modal-title {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+    }
+
+    .btn-close {
+      filter: brightness(0) invert(1);
+    }
+
+    .modal-body {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#rW">Recent Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#endsection">Get In Touch</a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center">
+        <a href="https://www.linkedin.com/in/agusraja/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/agusraja.s/" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Amoyta" class="social-icon"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="container mt-2">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1>I Wayan Agus Raja Guna Wijaya</h1>
+          <p class="text-justify">
+            I am a Multimedia graduate (2023) currently pursuing a degree in
+            Information Technology at ITB STIKOM Bali. I have a strong
+            interest in the IT field and enjoy learning new technologies.
+            Equipped with skills in video editing, graphic design, basic HTML
+            & CSS, and basic web penetration testing knowladge. I aim to build
+            a career in the IT and creative industries. I am dedicated to
+            continuously learning and exploring new opportunities within the
+            tech world.
+          </p>
+          <div class="call-to-action">
+            <a href="#endsection" class="btn btn-danger call-to-action" id="contactme">
+              Contact Me!
+            </a>
+            <a href="https://amoyta.github.io/myCV/" class="btn btn-primary call-to-action" id="cv">
+              My CV
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="profilePicture.jpg" alt="Profile Picture" class="profile-img" />
+        </div>
+      </div>
+      <div id="txtskill">
+        <p class="text-center text-white">work with</p>
+      </div>
+      <div class="row" id="rW">
+        <div class="col-lg-12 text-center" id="col-skill">
+          <div class="skills-container" id="skills">
+            <div class="skill-item">
+              <img src="photoshop.png" alt="Photoshop" />
+            </div>
+            <div class="skill-item">
+              <img src="illustrator.png" alt="Illustrator" />
+            </div>
+            <div class="skill-item">
+              <img src="figma.png" alt="figma" />
+            </div>
+            <div class="skill-item">
+              <img src="html.png" alt="html" />
+            </div>
+            <div class="skill-item">
+              <img src="css.png" alt="css" />
+            </div>
+            <div class="skill-item">
+              <img src="linux.png" alt="Linux" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recentWork">
+    <div class="container mt-5 recent-work">
+      <div class="row align-items-center">
+        <div class="col-lg-12 text-center">
+          <h2>Recent Work</h2>
+          <p class="text-justify mb-5">
+            Here are some of my recent projects that showcase my skills and
+            creativity. I have worked on various types of projects, including
+            video editing, graphic design, and web development. Each project
+            reflects my dedication to quality and attention to detail. Feel
+            free to explore my work and reach out if you have any questions or
+            collaboration ideas.
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center">
+          <img src="project1.jpg" alt="Project 1" class="project-img" />
+        </div>
+        <div class="col-lg-6 text-center">
+          <h4>
+            SOCIAL MEDIA
+          </h4>
+          <p>
+            Manage and create content for social media platforms, including
+            graphics, videos, and posts to engage the audience and promote
+          </p>
+          <button class="btn btn-reflection" data-bs-toggle="modal" data-bs-target="#reflectionModal1">
+            View Reflection
+          </button>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center">
+          <h4>
+            WEB PROJECT
+          </h4>
+          <p>
+            An experimental project bridging the gap between static design and dynamic development. The core challenge
+            involved building a functional system that captures, processes, and stores user-generated data in a
+            relational database.
+          </p>
+          <button class="btn btn-reflection" data-bs-toggle="modal" data-bs-target="#reflectionModal2">
+            View Reflection
+          </button>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="project1.jpg" alt="Project 1" class="project-img" />
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center">
+          <img src="project1.jpg" alt="Project 1" class="project-img" />
+        </div>
+        <div class="col-lg-6 text-center">
+          <h4>
+            UI/UX DESIGN
+          </h4>
+          <p>
+            This project was developed as a university assignment to explore the fundamentals of User-Centered Design.
+            My main focus was to identify user pain points in the freelance graphic design marketplace and translate
+            them into an intuitive interface for Vishire. The process involved creating user flows, low-fidelity
+            wireframes, and finally, a high-fidelity interactive prototype that simulates the actual user experience.
+          </p>
+          <button class="btn btn-reflection" data-bs-toggle="modal" data-bs-target="#reflectionModal3">
+            View Reflection
+          </button>
+        </div>
+      </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 text-center">
+          <h4>
+            DESIGN GRAPHIC
+          </h4>
+          <p>
+            Created various graphic design materials, including posters,
+            brochures, and digital assets for marketing campaigns and events.
+          </p>
+          <button class="btn btn-reflection" data-bs-toggle="modal" data-bs-target="#reflectionModal4">
+            View Reflection
+          </button>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="project1.jpg" alt="Project 1" class="project-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recentWork">
+    <div class="container mt-5 recent-work">
+      <div class="row align-items-center">
+        <div class="col-lg-12 text-center">
+          <h2>Case Based Project</h2>
+          <p class="text-justify mb-5">
+            In addition to project-based work, I also handle complex technical cases that require in-depth analysis,
+            problem-solving, and strategic planning. Below is a comprehensive case study in Network Administration.
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center">
+          <img src="Picture1.png" alt="Project 1" class="project-img" />
+        </div>
+        <div class="col-lg-6 text-center">
+          <h4>
+            NETWORK INFRASTRUCTURE DESIGN
+          </h4>
+          <p class="mb-2"><strong>Role:</strong> Network Administrator </p>
+          <p class="text-justify">
+            <strong>Objective:</strong> Designed a scalable network infrastructure for a corporate environment
+            consisting of two buildings with over 300 devices (PCs & Servers). The goal was to ensure seamless
+            connectivity between segmented LANs using distinct IP classes (Class A & B).
+          </p>
+          <p class="text-justify">
+            <strong>Solution:</strong>
+          </p>
+          <ul style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; text-align: justify;">
+            <li><strong>Topology Design:</strong> Implemented a hierarchical topology using Cisco ISR 4321 Routers and
+              Catalyst 2960 Switches to manage traffic for 300+ users[cite: 15].</li>
+            <li><strong>Routing Configuration:</strong> Configured Static Routing across Autonomous Systems to bridge
+              the WAN connection between the two buildings.</li>
+            <li><strong>Wireless Integration:</strong> Deployed Access Points with WPA2-PSK security for flexible mobile
+              connectivity[cite: 77].</li>
+            <li><strong>Budgeting:</strong> Developed a comprehensive cost estimation (approx. IDR 1.9 Billion) covering
+              hardware specifications and installation fees.</li>
           </ul>
+          <a href="Laporan Praktek_230040108_I WAYAN AGUS RAJA GUNA WIJAYA.pdf" download
+            class="btn btn-outline-dark btn-sm mt-4 mb-5" style="font-family: 'IBM Plex Mono';">View Full
+            Documentation</a>
+          <button class="btn btn-reflection btn-sm mx-3 mt-4 mb-5" data-bs-toggle="modal"
+            data-bs-target="#reflectionModal5" style="font-family: 'IBM Plex Mono';">
+            View Reflection
+          </button>
         </div>
-          <div class="d-flex align-items-center">
-            <a href="https://www.linkedin.com/in/agusraja/" class="social-icon"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a href="https://www.instagram.com/agusraja.s/" class="social-icon"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://github.com/Amoyta" class="social-icon"
-              ><i class="fab fa-github"></i
-            ></a>
-          </div>
       </div>
-    </nav>
+    </div>
 
-    <section id="profile">
-      <div class="container mt-2">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h1>I Wayan Agus Raja Guna Wijaya</h1>
-            <p class="text-justify">
-              I am a Multimedia graduate (2023) currently pursuing a degree in
-              Information Technology at ITB STIKOM Bali. I have a strong
-              interest in the IT field and enjoy learning new technologies.
-              Equipped with skills in video editing, graphic design, basic HTML
-              & CSS, and basic web penetration testing knowladge. I aim to build
-              a career in the IT and creative industries. I am dedicated to
-              continuously learning and exploring new opportunities within the
-              tech world.
+    <!-- Modal Reflection 1: SOCIAL MEDIA -->
+    <div class="modal fade" id="reflectionModal1" tabindex="-1" aria-labelledby="reflectionLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="reflectionLabel1">Reflection - SOCIAL MEDIA</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <strong>WHAT:</strong> I managed and created content for multiple social media platforms, including
+              designing graphics, editing videos, and developing engaging posts to promote brand awareness and engage
+              audiences across different demographics.
             </p>
-            <div class="call-to-action">
-              <a
-                href="#endsection"
-                class="btn btn-danger call-to-action"
-               id="contactme">
-                Contact Me!
-              </a>
-              <a
-                href="https://amoyta.github.io/myCV/"
-                class="btn btn-primary call-to-action"
-              id="cv">
-                My CV
-              </a>
+            <p>
+              <strong>SO WHAT:</strong> Through this experience, I discovered the critical importance of consistency in
+              posting schedules, visual branding, and audience engagement metrics. I learned that simply creating
+              content isn't enough—understanding platform algorithms and audience behavior directly impacts reach and
+              engagement. This taught me how analytics drive content strategy decisions.
+            </p>
+            <p>
+              <strong>NOW WHAT:</strong> Going forward, I will implement data-driven approaches to social media
+              management by regularly analyzing performance metrics, conducting A/B testing on different content
+              formats, and refining my content calendar based on audience insights. I aim to develop a more strategic
+              approach that balances creativity with measurable results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Reflection 2: WEB PROJECT -->
+    <div class="modal fade" id="reflectionModal2" tabindex="-1" aria-labelledby="reflectionLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="reflectionLabel2">Reflection - WEB PROJECT</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <strong>WHAT:</strong> I developed a web application that bridges the gap between static design mockups
+              and functional development, incorporating a complete user data capture system that processes and stores
+              information in a relational database. This project required both frontend interface design and backend
+              database management.
+            </p>
+            <p>
+              <strong>SO WHAT:</strong> This project revealed the complexity of full-stack development and the
+              importance of seamless communication between design and development teams. I realized that decisions made
+              during the design phase have significant implications for database structure and backend logic. Poor
+              planning at the start creates technical debt later. Additionally, I learned the critical importance of
+              data validation and security considerations when handling user information.
+            </p>
+            <p>
+              <strong>NOW WHAT:</strong> I will adopt a more collaborative approach by establishing clear specifications
+              before development begins, implement robust data validation mechanisms, and prioritize security practices
+              from the outset. I also plan to deepen my knowledge of database optimization and explore frameworks that
+              can accelerate development while maintaining code quality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Reflection 3: UI/UX DESIGN -->
+    <div class="modal fade" id="reflectionModal3" tabindex="-1" aria-labelledby="reflectionLabel3" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="reflectionLabel3">Reflection - UI/UX DESIGN</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <strong>WHAT:</strong> I conducted user research to identify pain points in the freelance graphic design
+              marketplace, then created user flows, low-fidelity wireframes, and high-fidelity interactive prototypes
+              for Vishire. This project was grounded in user-centered design principles, with a focus on translating
+              research findings into tangible interface solutions.
+            </p>
+            <p>
+              <strong>SO WHAT:</strong> The process demonstrated that good design isn't about personal preference—it's
+              about solving real user problems backed by research. I discovered that empathy and understanding user pain
+              points are far more valuable than aesthetic choices. Iterative feedback and usability testing revealed
+              assumptions I had made were often wrong, highlighting the dangers of designing without user validation.
+            </p>
+            <p>
+              <strong>NOW WHAT:</strong> I will continue to prioritize user research and testing in all future design
+              projects, implementing structured feedback sessions with actual users rather than relying on assumptions.
+              I aim to develop a more systematic approach to UX design by documenting design decisions and their
+              rationale, and I plan to explore advanced prototyping tools that allow for better user testing and
+              interaction simulation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Reflection 4: DESIGN GRAPHIC -->
+    <div class="modal fade" id="reflectionModal4" tabindex="-1" aria-labelledby="reflectionLabel4" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="reflectionLabel4">Reflection - DESIGN GRAPHIC</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <strong>WHAT:</strong> I created diverse graphic design materials including posters, brochures, digital
+              assets, and marketing collateral for various campaigns and events. Each project required adapting visual
+              designs across different mediums while maintaining consistent branding and messaging.
+            </p>
+            <p>
+              <strong>SO WHAT:</strong> This experience taught me that graphic design extends beyond aesthetics—it's a
+              strategic communication tool. I learned that the same message must be adapted for different contexts and
+              audiences, and that understanding the client's objectives is as important as technical design skills.
+              Constraints (budget, timeline, format limitations) actually foster creativity rather than hinder it, and
+              working within these boundaries produces stronger results.
+            </p>
+            <p>
+              <strong>NOW WHAT:</strong> Moving forward, I will prioritize deeper client consultation to fully
+              understand project objectives before beginning design work. I plan to build a more diverse portfolio that
+              showcases my ability to adapt designs across mediums and brand contexts. I also want to develop stronger
+              skills in motion graphics and animated assets to stay current with modern design demands.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Reflection 5: NETWORK INFRASTRUCTURE DESIGN (Case Based) -->
+    <div class="modal fade" id="reflectionModal5" tabindex="-1" aria-labelledby="reflectionLabel5" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="reflectionLabel5">Reflection - NETWORK INFRASTRUCTURE DESIGN</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <strong>WHAT:</strong> I designed a comprehensive network infrastructure for a corporate environment
+              spanning two buildings with 300+ devices. This involved creating a hierarchical topology using Cisco
+              equipment, configuring static routing protocols, integrating wireless access points, and developing a
+              complete budget estimate (IDR 1.9 Billion) covering hardware and installation.
+            </p>
+            <p>
+              <strong>SO WHAT:</strong> This project demonstrated that network administration requires a holistic
+              approach considering not just technical specifications, but also scalability, security, budget
+              constraints, and future organizational growth. I realized that network design decisions have lasting
+              implications—poor planning becomes exponentially more expensive to remediate later. Additionally, I
+              learned that successful infrastructure projects require strong documentation and stakeholder communication
+              to justify technical decisions in business terms.
+            </p>
+            <p>
+              <strong>NOW WHAT:</strong> I will deepen my expertise in network security protocols and redundancy
+              planning to design more resilient systems. I plan to pursue advanced certifications in network
+              administration (CCNA) to strengthen my technical credentials. Additionally, I will develop better skills
+              in presenting technical concepts to non-technical stakeholders, as infrastructure projects increasingly
+              require business case justification and cost-benefit analysis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="endsection">
+    <div class="container get-in-touch">
+      <div class="row align-items-center">
+        <div class="col-lg-12 text-center">
+          <h2>Get In Touch</h2>
+          <p class="text-justify">
+            If you have any questions, collaboration ideas, or just want to
+            say hello, feel free to reach out! You can contact me by filling
+            out the form below with your email, phone number, and message.
+            I'll get back to you as soon as possible. Looking forward to
+            hearing from you!
+          </p>
+
+          <form id="contactForm" class="contact-form">
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
             </div>
-          </div>
-          <div class="col-lg-6 text-center">
-            <img
-              src="profilePicture.jpg"
-              alt="Profile Picture"
-              class="profile-img"
-            />
-          </div>
-        </div>
-        <div id="txtskill">
-          <p class="text-center text-white">work with</p>
-        </div>
-        <div class="row" id="rW">
-          <div class="col-lg-12 text-center" id="col-skill">
-            <div class="skills-container" id="skills">
-              <div class="skill-item">
-                <img src="photoshop.png" alt="Photoshop" />
-              </div>
-              <div class="skill-item">
-                <img src="illustrator.png" alt="Illustrator" />
-              </div>
-              <div class="skill-item">
-                <img src="figma.png" alt="figma" />
-              </div>
-              <div class="skill-item">
-                <img src="html.png" alt="html" />
-              </div>
-              <div class="skill-item">
-                <img src="css.png" alt="css" />
-              </div>
-              <div class="skill-item">
-                <img src="linux.png" alt="Linux" />
-              </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required />
             </div>
-          </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Massage"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Send Massage</button>
+            <div id="responseMessage"></div>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="recentWork">
-      <div class="container mt-5 recent-work">
-        <div class="row align-items-center">
-          <div class="col-lg-12 text-center">
-            <h2>Recent Work</h2>
-            <p class="text-justify mb-5">
-              Here are some of my recent projects that showcase my skills and
-              creativity. I have worked on various types of projects, including
-              video editing, graphic design, and web development. Each project
-              reflects my dedication to quality and attention to detail. Feel
-              free to explore my work and reach out if you have any questions or
-              collaboration ideas.
-            </p>
-          </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-lg-6 text-center">
-            <img src="project1.jpg" alt="Project 1" class="project-img" />
-          </div>
-          <div class="col-lg-6 text-center">
-            <h4>
-              SOCIAL MEDIA
-            </h4>
-            <p>
-              Manage and create content for social media platforms, including
-              graphics, videos, and posts to engage the audience and promote
-            </p>
-          </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-lg-6 text-center">
-            <h4>
-              WEB PROJECT
-            </h4>
-            <p>
-              An experimental project bridging the gap between static design and dynamic development. The core challenge involved building a functional system that captures, processes, and stores user-generated data in a relational database.
-            </p>
-          </div>
-          <div class="col-lg-6 text-center">
-            <img src="project1.jpg" alt="Project 1" class="project-img" />
-          </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-lg-6 text-center">
-            <img src="project1.jpg" alt="Project 1" class="project-img" />
-          </div>
-          <div class="col-lg-6 text-center">
-            <h4>
-              UI/UX DESIGN
-            </h4>
-            <p>
-              This project was developed as a university assignment to explore the fundamentals of User-Centered Design. My main focus was to identify user pain points in the freelance graphic design marketplace and translate them into an intuitive interface for Vishire. The process involved creating user flows, low-fidelity wireframes, and finally, a high-fidelity interactive prototype that simulates the actual user experience.
-            </p>
-          </div>
-        </div>
-        <div class="row align-items-center mb-5">
-          <div class="col-lg-6 text-center">
-            <h4>
-              DESIGN GRAPHIC
-            </h4>
-            <p>
-              Created various graphic design materials, including posters,
-              brochures, and digital assets for marketing campaigns and events.
-            </p>
-          </div>
-          <div class="col-lg-6 text-center">
-            <img src="project1.jpg" alt="Project 1" class="project-img" />
-          </div>
-        </div>
-      </div>
-    </section>
+  <section id="footer">
+    <footer class="text-center py-2 footer-custom">
+      &copy; 2025 I Wayan Agus Raja Guna Wijaya. All rights reserved.
+    </footer>
+  </section>
 
-    <section id="recentWork">
-      <div class="container mt-5 recent-work">
-        <div class="row align-items-center">
-          <div class="col-lg-12 text-center">
-            <h2>Case Based Project</h2>
-            <p class="text-justify mb-5">
-              In addition to project-based work, I also handle complex technical cases that require in-depth analysis, problem-solving, and strategic planning. Below is a comprehensive case study in Network Administration.
-            </p>
-          </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-lg-6 text-center">
-            <img src="Picture1.png" alt="Project 1" class="project-img" />
-          </div>
-          <div class="col-lg-6 text-center">
-            <h4>
-              NETWORK INFRASTRUCTURE DESIGN
-            </h4>
-            <p class="mb-2"><strong>Role:</strong> Network Administrator </p>
-            <p class="text-justify">
-              <strong>Objective:</strong> Designed a scalable network infrastructure for a corporate environment consisting of two buildings with over 300 devices (PCs & Servers). The goal was to ensure seamless connectivity between segmented LANs using distinct IP classes (Class A & B).
-            </p>
-            <p class="text-justify">
-              <strong>Solution:</strong>
-            </p>
-            <ul style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; text-align: justify;">
-              <li><strong>Topology Design:</strong> Implemented a hierarchical topology using Cisco ISR 4321 Routers and Catalyst 2960 Switches to manage traffic for 300+ users[cite: 15].</li>
-              <li><strong>Routing Configuration:</strong> Configured Static Routing across Autonomous Systems to bridge the WAN connection between the two buildings.</li>
-              <li><strong>Wireless Integration:</strong> Deployed Access Points with WPA2-PSK security for flexible mobile connectivity[cite: 77].</li>
-              <li><strong>Budgeting:</strong> Developed a comprehensive cost estimation (approx. IDR 1.9 Billion) covering hardware specifications and installation fees.</li>
-            </ul>
-             <a href="Laporan Praktek_230040108_I WAYAN AGUS RAJA GUNA WIJAYA.pdf" download class="btn btn-outline-dark btn-sm mt-4 mb-5" style="font-family: 'IBM Plex Mono';">View Full Documentation</a>
-          </div>
-        </div>
-      </div>
-    </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzaXkDEjtffBOw1Lyi_lTBYtGaWQmCsdK2svx145zp2V1kqA_GwXr0QPf_q1cCKBODFig/exec'; // Ganti dengan URL dari Google Apps Script
 
-    <section id="endsection">
-      <div class="container get-in-touch">
-        <div class="row align-items-center">
-          <div class="col-lg-12 text-center">
-            <h2>Get In Touch</h2>
-            <p class="text-justify">
-              If you have any questions, collaboration ideas, or just want to
-              say hello, feel free to reach out! You can contact me by filling
-              out the form below with your email, phone number, and message.
-              I'll get back to you as soon as possible. Looking forward to
-              hearing from you!
-            </p>
-            
-            <form id="contactForm" class="contact-form">
-              <div class="mb-3">
-                <input 
-                  type="email" 
-                  class="form-control" 
-                  id="email" 
-                  name="email" 
-                  placeholder="Email" 
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <input 
-                  type="tel" 
-                  class="form-control" 
-                  id="phone" 
-                  name="phone" 
-                  placeholder="Phone" 
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <textarea 
-                  class="form-control" 
-                  id="message" 
-                  name="message" 
-                  rows="5" 
-                  placeholder="Massage" 
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-success">Send Massage</button>
-              <div id="responseMessage"></div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
 
-    <section id="footer">
-      <footer class="text-center py-2 footer-custom">
-        &copy; 2025 I Wayan Agus Raja Guna Wijaya. All rights reserved.
-      </footer>
-    </section>
+      const formData = new FormData(this);
+      const responseMessage = document.getElementById('responseMessage');
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzaXkDEjtffBOw1Lyi_lTBYtGaWQmCsdK2svx145zp2V1kqA_GwXr0QPf_q1cCKBODFig/exec'; // Ganti dengan URL dari Google Apps Script
-      
-      document.getElementById('contactForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(this);
-        const responseMessage = document.getElementById('responseMessage');
-        
-        fetch(SCRIPT_URL, {
-          method: 'POST',
-          body: formData
-        })
+      fetch(SCRIPT_URL, {
+        method: 'POST',
+        body: formData
+      })
         .then(response => {
           responseMessage.innerHTML = '<p class="text-success">Pesan berhasil dikirim! Terima kasih.</p>';
           document.getElementById('contactForm').reset();
@@ -322,7 +494,8 @@
           responseMessage.innerHTML = '<p class="text-danger">Gagal mengirim pesan. Coba lagi.</p>';
           console.error('Error:', error);
         });
-      });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
